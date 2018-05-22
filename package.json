@@ -1,0 +1,23 @@
+{
+  "name": "carlin-test-discord",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominusbelli/carlin-test-discord.git"
+  },
+  "author": "carlin",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/dominusbelli/carlin-test-discord/issues"
+  },
+  "homepage": "https://github.com/dominusbelli/carlin-test-discord#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
