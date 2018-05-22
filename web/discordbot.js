@@ -1,5 +1,8 @@
-const config = require('../config.js');
 const Discord = require('discord.js');
+
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config({ path: __dirname + '/../.env'});
+}
 
 class DiscordBot {
   constructor() {
@@ -17,7 +20,7 @@ class DiscordBot {
       }
     });
 
-    this.client.login(process.env.DISCORD_TOKEN || config.DISCORD_TOKEN);
+    this.client.login(process.env.DISCORD_TOKEN);
   }
 }
 
