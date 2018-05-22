@@ -17,7 +17,7 @@ class DiscordBot {
       }
     });
 
-    this.client.login(config.DISCORD_TOKEN);
+    this.client.login(process.env.DISCORD_TOKEN || config.DISCORD_TOKEN);
   }
 }
 
